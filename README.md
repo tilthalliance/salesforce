@@ -1,8 +1,6 @@
-# Welcome
-This project outlines customizations and user documentation for Tilth Alliance's Salesforce instance.
+This repository serves as a central hub for user documentation, troubleshooting and development projects for Tilth Alliance's Salesforce instance.
 
-## Salesforce Users
-Salesforce Users will find Salesforce user guides and other documentation in the [Wiki](https://github.com/tilthalliance/salesforce/wiki)
+* **Salesforce users** will find Salesforce user guides and Salesforce basics in the [Wiki](https://github.com/tilthalliance/salesforce/wiki).
+* **Admin users** will find the code for custom formula fields and other customizations in the [Code](https://github.com/tilthalliance/salesforce) section, and can review bugs, questions and feature requests under [Issues](https://github.com/tilthalliance/salesforce/issues)
 
-## Admin Users
-Admin users will find the code for custom formula fields and other customizations in the Code section
+**Please note that this repository is publicly available. Never post usernames, passwords or other sensitive data through GitHub.**
