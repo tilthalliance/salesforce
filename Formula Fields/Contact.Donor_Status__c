@@ -1,0 +1,20 @@
+IF( 
+(npo02__OppsClosedThisYear__c > 0) && (npo02__OppsClosedThisYear__c = npo02__NumberOfClosedOpps__c), "New Donor", ( 
+
+IF( 
+(npo02__OppsClosedThisYear__c > 0) && ( npo02__OppAmountLastYear__c > 0), "Renewing Donor", ( 
+
+IF( 
+(npo02__OppsClosedThisYear__c > 0) && ( npo02__OppAmountLastYear__c = 0) && ( npo02__OppAmount2YearsAgo__c > 0), "Rejoining Donor", ( 
+
+IF( 
+(npo02__OppsClosedThisYear__c > 0) && ( npo02__OppAmountLastYear__c = 0) && ( npo02__OppAmount2YearsAgo__c = 0) && (npo02__NumberOfClosedOpps__c > npo02__OppsClosedThisYear__c), "Deep Rejoining Donor", ( 
+
+
+IF( 
+(npo02__OppsClosedThisYear__c = 0) && (npo02__OppAmountLastYear__c > 0), "LYBUNT", ( 
+
+IF( 
+(npo02__OppsClosedThisYear__c = 0) && ( npo02__OppAmountLastYear__c = 0) && (npo02__NumberOfClosedOpps__c > 0), "SYBUNT", "" 
+) 
+))))))))))
