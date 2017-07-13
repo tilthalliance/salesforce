@@ -1,0 +1,1 @@
+IF (YEAR(CloseDate) = YEAR(TODAY()) && Restricted__c = TRUE && RecordTypeId = "012A0000000tox7", Amount, 0)
