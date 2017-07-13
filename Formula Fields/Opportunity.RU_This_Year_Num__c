@@ -1,0 +1,1 @@
+IF (YEAR(CloseDate) = YEAR(TODAY()) && RecordTypeId <> "012A0000000tox7", 1, 0)
