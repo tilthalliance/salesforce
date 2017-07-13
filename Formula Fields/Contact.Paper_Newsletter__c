@@ -1,0 +1,9 @@
+IF( Wants_NL__c = True, True, False) 
+|| 
+IF( Account.npo02__MembershipEndDate__c >= TODAY(), True, false) 
+|| 
+IF( Lifetime_member__c = True, True, False) 
+|| 
+IF( Account.Last_Recurring_Donation_Date__c >= DATE(YEAR (TODAY())-1,MONTH (TODAY()),1), True, false) 
+|| 
+IF( Account.Last_date_donation_over_35__c >= DATE(YEAR (TODAY())-1,MONTH (TODAY()),1), True, false)
