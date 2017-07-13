@@ -1,0 +1,20 @@
+IF( 
+( npo02__OppsClosed2YearsAgo__c > 0) && (npo02__NumberOfClosedOpps__c = (npo02__OppsClosed2YearsAgo__c + npo02__OppsClosedLastYear__c + npo02__OppsClosedThisYear__c)), "New Donor", ( 
+
+IF( 
+(npo02__OppsClosed2YearsAgo__c > 0) && ( Number_of_Gifts_FY_14__c > 0), "Renewing Donor", ( 
+
+IF( 
+(npo02__OppsClosed2YearsAgo__c > 0) && ( Number_of_Gifts_FY_14__c = 0) && ( 
+Number_of_Gifts_FY_13__c > 0), "Rejoining Donor", ( 
+
+IF( 
+(npo02__OppsClosed2YearsAgo__c > 0) && ( Number_of_Gifts_FY_14__c = 0) && ( Number_of_Gifts_FY_13__c = 0) && (npo02__NumberOfClosedOpps__c > (npo02__OppsClosedThisYear__c + npo02__OppsClosedLastYear__c + npo02__OppsClosed2YearsAgo__c)), "Deep Rejoining Donor", ( 
+
+IF( 
+(npo02__OppsClosed2YearsAgo__c = 0) && ( Number_of_Gifts_FY_14__c > 0), "LYBUNT", ( 
+
+IF( 
+(npo02__OppsClosed2YearsAgo__c = 0) && ( Number_of_Gifts_FY_14__c = 0) && (npo02__NumberOfClosedOpps__c > (npo02__OppsClosedThisYear__c + npo02__OppsClosedLastYear__c)), "SYBUNT", "" 
+) 
+))))))))))
