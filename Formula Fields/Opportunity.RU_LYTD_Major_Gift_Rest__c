@@ -1,0 +1,17 @@
+IF ( 
+AND ( 
+RecordTypeId = "012A0000000tox7", 
+Restricted__c = TRUE, 
+CloseDate >= DATE( YEAR( TODAY() ) - 1, 1, 1), 
+CloseDate <= IF ( 
+AND ( 
+MONTH( TODAY() ) = 2, 
+DAY( TODAY() ) = 29 
+), 
+DATE( YEAR( TODAY() ) - 1, 2, 28), 
+DATE( YEAR( TODAY() ) - 1, MONTH( TODAY() ), DAY( TODAY() ) ) 
+) 
+
+), 
+Amount, 0 
+)
