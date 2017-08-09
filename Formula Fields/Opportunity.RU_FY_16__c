@@ -1,1 +1,8 @@
-IF (YEAR(CloseDate) = 2016 && RecordTypeId <> "012A0000000tox7", Amount, 0)
+IF (YEAR(CloseDate) = 2016 && OR (
+    RecordTypeId  == "012A0000000tox5",
+    RecordTypeId  == "012A0000000hhKw",
+    RecordTypeId  == "012F0000000jA6P",
+    RecordTypeId  == "012F0000000jClU",
+    RecordTypeId  == "012F0000000jClV",
+    RecordTypeId  == "0122A000001QFJk"),
+Amount, 0)
