@@ -1,6 +1,11 @@
 IF ( 
 AND ( 
-RecordTypeId <> "012A0000000tox7", 
+      OR ( RecordTypeId  == "012A0000000tox5",
+           RecordTypeId  == "012A0000000hhKw",
+           RecordTypeId  == "012F0000000jA6P",
+           RecordTypeId  == "012F0000000jClU",
+           RecordTypeId  == "012F0000000jClV",
+           RecordTypeId  == "0122A000001QFJk"),
 CloseDate >= DATE( YEAR( TODAY() ) - 2, 1, 1), 
 CloseDate <= IF ( 
 AND ( 
