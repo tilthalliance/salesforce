@@ -4,5 +4,8 @@ IF ( YEAR(CloseDate) = 2015 && OR (
     RecordTypeId  == "012F0000000jA6P",
     RecordTypeId  == "012F0000000jClU",
     RecordTypeId  == "012F0000000jClV",
-    RecordTypeId  == "0122A000001QFJk"),
+    RecordTypeId  == "0122A000001QFJk",
+    RecordTypeId  == "012F0000000WbAO",
+    RecordTypeId  == "012A0000000tox8",
+    RecordTypeId  == "012A0000000ifr1"),
 1, 0)
