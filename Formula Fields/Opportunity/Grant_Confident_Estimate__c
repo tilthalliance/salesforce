@@ -1,0 +1,5 @@
+IF( ISPICKVAL(Grant_Confidence__c, "High"),  Amount , 
+ IF(ISPICKVAL(Grant_Confidence__c, "Medium"), Amount  * 0.6, 
+ IF(ISPICKVAL(Grant_Confidence__c, "Low"), Amount  * 0.2, 
+ IF(ISPICKVAL(Grant_Confidence__c, "Very Low"), Amount  * 0.1, 
+0))))
