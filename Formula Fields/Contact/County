@@ -1,0 +1,80 @@
+IF(
+    BEGINS(
+        "99105:99169:99341:99344:99371",
+        MailingPostalCode
+    ),
+    "Adams",
+IF(
+    BEGINS(
+        "99401:99402:99403",
+        MailingPostalCode
+    ),
+    "Asotin",
+IF(
+    BEGINS(
+        "99320:99336:99337:99338:99345:99346:99350:99352:99353:99354",
+        MailingPostalCode
+    ),
+    "Benton",
+IF(
+    BEGINS(
+        "98801:98807:98811:98815:98816:98817:98821:98822:98826:98828:98831:98836:98847:98852",
+        MailingPostalCode
+    ),
+    "Chelan",
+IF(
+    BEGINS(
+        "98305:98324:98326:98331:98343:98350:98357:98362:98363:98381:98382",
+        MailingPostalCode
+    ),
+    "Clallam",
+IF(
+    BEGINS(
+        "98601:98604:98606:98607:98622:98629:98642:98660:98661:98662:98663:98664:98665:98666:98668:98671:98675:98682:98683:98684:98685:98686:98687",
+        MailingPostalCode
+    ),
+    "Clark",
+IF(
+    BEGINS(
+        "99328:99359",
+        MailingPostalCode
+    ),
+    "Columbia",
+IF(
+    BEGINS(
+        "98581:98603:98609:98611:98616:98625:98626:98632:98645:98649:98674",
+        MailingPostalCode
+    ),
+    "Cowlitz",
+IF(
+    BEGINS(
+        "98802:98813:98830:98843:98845:98850:98858",
+        MailingPostalCode
+    ),
+    "Douglas",
+IF(
+    BEGINS(
+        "99118:99121:99138:99140:99146:99150:99160:99166",
+        MailingPostalCode
+    ),
+    "Ferry",
+IF(
+    BEGINS(
+        "99301:99302:99326:99330:99335:99343",
+        MailingPostalCode
+    ),
+    "Franklin",
+IF(
+    BEGINS(
+        "99347",
+        MailingPostalCode
+    ),
+    "Garfield",
+IF(
+    BEGINS(
+        "98823:98824:98832:98837:98848:98851:98853:98857:98860:99115:99123:99133:99135:99321:99349:99357",
+        MailingPostalCode
+    ),
+    "Grant",
+    NULL
+)))))))))))))
